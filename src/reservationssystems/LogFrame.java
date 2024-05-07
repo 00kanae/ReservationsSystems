@@ -95,6 +95,10 @@ public class LogFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rightbg.jpg"))); // NOI18N
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lleftbg.png"))); // NOI18N
+
         jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("Password");
 
@@ -215,8 +219,8 @@ public class LogFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        registration_form registration_form = new registration_form();
-        //registration_form.setVisible(true);
+        RegistrationFrame rf = new RegistrationFrame();
+        rf.show();
         dispose();
 
     }//GEN-LAST:event_jButton2ActionPerformed

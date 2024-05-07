@@ -51,7 +51,6 @@ public class RegistrationFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1200, 675));
         setMinimumSize(new java.awt.Dimension(1200, 675));
         getContentPane().setLayout(null);
 
@@ -101,7 +100,7 @@ public class RegistrationFrame extends javax.swing.JFrame {
         btn_register.setBackground(new java.awt.Color(0, 153, 153));
         btn_register.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_register.setText("Register");
-        btn_register.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        btn_register.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_register.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_registerActionPerformed(evt);
@@ -113,7 +112,7 @@ public class RegistrationFrame extends javax.swing.JFrame {
         btn_clear.setBackground(new java.awt.Color(0, 102, 102));
         btn_clear.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_clear.setText("Clear");
-        btn_clear.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        btn_clear.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_clearActionPerformed(evt);
@@ -126,6 +125,11 @@ public class RegistrationFrame extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("LOGIN");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(990, 110, 150, 50);
 
@@ -161,7 +165,7 @@ public class RegistrationFrame extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(500, 510, 60, 40);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reservationssystems/SYSTEM DESIGN.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/SYSTEM DESIGN.png"))); // NOI18N
         getContentPane().add(jLabel7);
         jLabel7.setBounds(0, 0, 1200, 670);
 
@@ -302,6 +306,12 @@ public class RegistrationFrame extends javax.swing.JFrame {
         passCON.setForeground(Color.RED);
     }
     }//GEN-LAST:event_passCONKeyReleased
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        LogFrame rf = new LogFrame();
+        rf.show();
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package reservationssystems;
 
+import javax.swing.JFrame;
+
 /**
- *
- * @author elyss
+ * Represents a registration form.
  */
-class registration_form {
+public class registration_form {
     
+    public static void main(String[] args) {
+        // Create an instance of RegistrationFrame
+        RegistrationFrame registrationFrame = new RegistrationFrame();
+        
+        // Set the default close operation
+        registrationFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        // Make the frame visible
+        registrationFrame.setVisible(true);
+    }
 }
